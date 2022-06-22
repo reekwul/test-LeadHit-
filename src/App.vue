@@ -19,7 +19,7 @@ export default {
 </script>
 
 <style>
-app {
+#app {
   display: flex;
     flex-direction: column;
   font-family: Avenir, Helvetica, Arial, sans-serif;
