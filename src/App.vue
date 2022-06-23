@@ -1,20 +1,12 @@
 <template>
-
-    <v-avtorization/>
-    <v-analitics/>
+    <router-view></router-view>
 </template>
 
 <script>
 
-import VAvtorization from "@/components/v-avtorization";
-import VAnalitics from "@/components/v-analitics";
+
 export default {
   name: 'App',
-  components: {
-      VAnalitics,
-      VAvtorization
-
-  }
 }
 </script>
 
@@ -26,6 +18,19 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
-  margin-top: 30px;
+}
+h1{
+    margin: 10px;
+    padding: 10px;
+    position: relative;
+    left: 100px;
+    font-size: 50px;
+}
+hr{
+    align-self: center;
+    width: 90%;
+    border:  1px solid darkcyan;
+    box-shadow: 0px 3px 9px rgba(0,0,0, 0.5) ;
+    margin: 0 0 50px;
 }
 </style>

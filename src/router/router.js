@@ -8,9 +8,17 @@ const routes = [
         component:VAvtorization
     },
     {
-        path:'/Analitics',
+        path:'/analitics',
         name:'VAnalitics',
-        component:VAnalitics
+        component:VAnalitics,
+        beforeEnter: (to,from,next)=>{
+            if(localStorage.getItem('value')){
+                console.log(localStorage.getItem('value'));
+                next()
+            }else {
+                next({neme: 'VAvtorization'})
+            }
+        }
     }
 ]
 const router = createRouter({
